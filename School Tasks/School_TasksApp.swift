@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct School_TasksApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject private var coreDataManager = CoreDataManager.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBarView()
+                .environment(\.managedObjectContext, coreDataManager.container.viewContext)
         }
     }
 }

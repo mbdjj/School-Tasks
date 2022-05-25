@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  School Tasks
+
+  Created by Marcin Bartminski on 11/05/2022.
+  
+*/
+
+"tasks" = "Tasks";
+
+"date_format" = "MMM dd yyyy";
+
+"edit" = "Edit";
+"delete" = "Delete";
+"cancel" = "Cancel";
+"add" = "Add";
+"save" = "Save";
+
+"sure?" = "Are you sure?";
+"y" = "Yes";
+"n" = "No";
+
+"add_title" = "Title";
+"add_description" = "Description";
+"add_due" = "Due";
+"add_notify" = "Notify";
+"add_when" = "When";
+"add_subject" = "Subject";
+"add_nav_title" = "New Task";
+
+"edit_nav_title" = "Edit Task";
+
+"choose_new" = "New subject";
+"choose_nav_title" = "Choose a subject";
+
+"settings" = "Settings";
+"settings_hide_done" = "Hide done tasks";
+
+"no_tasks_1" = "No tasks to display.";
+"no_tasks_2" = "You can try adding some!";

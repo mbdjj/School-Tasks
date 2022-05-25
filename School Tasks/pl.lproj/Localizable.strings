@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  School Tasks
+
+  Created by Marcin Bartminski on 11/05/2022.
+  
+*/
+
+"tasks" = "Zadania";
+
+"date_format" = "dd MMM yyyy";
+
+"edit" = "Edytuj";
+"delete" = "Usuń";
+"cancel" = "Anuluj";
+"add" = "Dodaj";
+"save" = "Zapisz";
+
+"sure?" = "Jesteś pewien, że chcesz anulować?";
+"y" = "Tak";
+"n" = "Nie";
+
+"add_title" = "Tytuł";
+"add_description" = "Opis";
+"add_due" = "Do";
+"add_notify" = "Powiadom";
+"add_when" = "Kiedy";
+"add_subject" = "Przedmiot";
+"add_nav_title" = "Nowe Zadanie";
+
+"edit_nav_title" = "Edytuj Zadanie";
+
+"choose_new" = "Nowy przedmiot";
+"choose_nav_title" = "Wybierz przedmiot";
+
+"settings" = "Ustawienia";
+"settings_hide_done" = "Ukryj wykonane zadania";
+
+"no_tasks_1" = "Brak zadań do wyświetlenia.";
+"no_tasks_2" = "Możesz spróbować dodać nowe!";
