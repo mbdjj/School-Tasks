@@ -135,6 +135,7 @@ struct EditTaskView: View {
                         
                         withAnimation {
                             try? context.save()
+                            handler.setBadges()
                         }
                     } label: {
                         Text(String(localized: "save"))

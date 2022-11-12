@@ -82,7 +82,7 @@ struct TasksView: View {
         handler.taskArray = taskArray
         
         for task in taskArray {
-            if task.dateOfCompletion! < Date() {
+            if task.dateOfCompletion! < Date() && task.isDone {
                 withAnimation {
                     context.delete(task)
                     try? context.save()

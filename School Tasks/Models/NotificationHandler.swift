@@ -22,7 +22,7 @@ class NotificationHandler {
     func requestNotificationPermission() {
         let authOptions = UNAuthorizationOptions(arrayLiteral: .alert, .badge, .sound, .criticalAlert)
         
-        userNotificationCenter.requestAuthorization(options: authOptions) { success, error in
+        userNotificationCenter.requestAuthorization(options: authOptions) { _, error in
             if let error = error {
                 print("Error requesting authorization: \(error.localizedDescription)")
             }
@@ -31,9 +31,11 @@ class NotificationHandler {
     
     func sheduleNotification(about task: Task) {
         let content = UNMutableNotificationContent()
-        content.title = task.title ?? ""
-        content.body = task.taskDescription ?? ""
+        content.title = "Tasks"
+        content.body = task.title ?? ""
         content.badge = 1
+        content.sound = .defaultCritical
+        content.interruptionLevel = .timeSensitive
         
         let components = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: task.dateOfNotification ?? Date())
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
