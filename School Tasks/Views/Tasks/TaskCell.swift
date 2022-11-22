@@ -36,9 +36,15 @@ struct TaskCell: View {
                     }
                     NotificationHandler.shared.setBadges()
                 } label: {
-                    Text(task.title ?? "---")
-                        .font(.title2)
-                        .bold()
+                    HStack {
+                        Text(task.title ?? "---")
+                            .font(.title2)
+                            .bold()
+                            
+                        
+                        Image(systemName: task.notify ? "bell.fill" : "bell")
+                            .foregroundColor(task.notify ? .accentColor : .primary)
+                    }
                 }
                 .foregroundColor(.primary)
                 Text("\(task.subject ?? "---")   \(dateString)")
